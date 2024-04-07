@@ -103,10 +103,10 @@ summary(regression)
 
 #ii. The dependent variable should be Total Expense. Choose anindependent variable from one of the remaining attributes.
 #I picked number of beds since that is an important factor when choosing hospital size 
-#iii. What is the value of the �!?
+#iii. What is the value of the R²?
 #The value of the R² (R-squared) in this model is 0.6043. This indicates the proportion of variance in the total expense that can be explained by the number of beds.
 
-  # iv. What does the �! measure in this case? ( Hint: Percentage of variation in … explained by …)
+  # iv. What does the R^2 measure in this case? ( Hint: Percentage of variation in … explained by …)
 #R-squared measures the proportion of the variance in the dependent variable (Total Expense) that is predictable from the independent variable (Beds). 
 #In this case, it indicates that about 60.43% of the variation in total expenses can be explained by the number of beds in the hospital.
 
@@ -130,9 +130,9 @@ multivariate_regression <- lm(Total.Expense ~ Beds + Admissions, data = data)
 
 summary(multivariate_regression)
 
-# ii. The value of the R^2 is 0.7398.
+# ii.  R^2 is 0.7398.
 
-# iii. In this case, the R-squared (R²) measures the percentage of variation
+# iii. The R-squared (R²) measures the percentage of variation
 # in Total Expense that is explained by the independent variables
 # (Outpatient Visits and Births). It indicates the goodness of fit of the
 # regression model. For example, an R² of 0.7398 means that approximately
@@ -155,6 +155,6 @@ summary(multivariate_regression)
   #  R-squared is 0.7398
 
 # P-values:
-# P-values indicate the significance of each independent variable's contribution to the model.
-# Both Admissions and Beds have extremely low p-values, < 2e-16 and 7.25e-13 respectively, indicating high statistical significance.
-# This means both Admissions and Beds have a significant impact on Total Expense.
+# P-values indicate the significance of each independent variable's impact on the model.
+# Both Admissions and Beds have extremely low p-values, < 2e-16 and 7.25e-13 so there is a high statistical significance.
+# Both Admissions and Beds have an impact on Total Expense.
